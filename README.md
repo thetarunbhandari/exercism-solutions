@@ -1,4 +1,4 @@
-This is repository contains all of my **[Exercism](https://exercism.org/bash/) bash** module solution  
+This is repository contains all of my **[Exercism](https://exercism.org/) bash** module solution  
 You can check out the exercism platform and solve the questions.
 
 ### Questions
