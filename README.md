@@ -2,6 +2,6 @@ This is repository contains all of my **[Exercism](https://exercism.org/bash/) b
 You can check out the exercism platform and solve the questions.
 
 ### Questions
-1) [Raindrop-sound]("./Raindrop-sound.sh")
+1) [Raindrop-sound](raindrop-sound.sh)
 
 
