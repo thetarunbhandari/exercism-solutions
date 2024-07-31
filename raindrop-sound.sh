@@ -10,6 +10,7 @@
 #    is divisible by 7, add "Plong" to the result.
 #    is not divisible by 3, 5, or 7, the result should be the number as a string.
 #
+# Link: https://exercism.org/tracks/bash/exercises/raindrops
 # --------------------------------------------------------------------------
 
 
