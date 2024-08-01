@@ -14,21 +14,15 @@
 # --------------------------------------------------------------------------
 
 check_armstrong (){
-    local -i number=$1 sum=0 power=0 digit
+    local -i number=$1 sum=0 digit
     local -i len=${#number} temp=$number
     
     while (( temp > 0 )); do   
         (( digit = temp % 10))
-        (( power = digit ** len))
-        (( sum += power))
+        (( sum += digit ** len))
         (( temp /= 10))
     done
-    
-    if (( sum == number )); then
-        echo true
-    else
-        echo false
-    fi
+    ((sum == number)) && echo true || echo false
 }
 
 check_armstrong "$@"
