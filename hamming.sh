@@ -30,5 +30,18 @@ find_hamming_distance() {
     echo "$difference"
 }
 
-find_hamming_distance "$@"
+main() {  
+    if [[ "$#" -ne "2" ]]; then
+        echo "Usage: hamming.sh <string1> <string2>"
+        exit 1
+    fi
+    
+    if [[ "${#1}" == "${#2}" ]]; then
+        find_hamming_distance "$1" "$2" "${#1}"
+    else
+        echo "strands must be of equal length"
+        exit 1
+    fi
+}
 
+main "$@"
