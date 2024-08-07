@@ -16,9 +16,9 @@ make-acronym (){
    local phrase=$1
    local normalized_phrase=${phrase//-/ }
    normalized_phrase=$(echo "$normalized_phrase" | tr -d '[:punct:]')
-   acryon=$(echo "normalized_phrase" | awk '{for(i=1; i<NF; i++) printf toupper(substr($1,1,1));}')
+   acryon=$(echo "$normalized_phrase" | awk '{for(i=1; i<=NF; i++) printf toupper(substr($i,1,1));}')
    echo "$acryon"
 }
 
-make-acronym "$1"
+make-acronym "$@"
 
