@@ -20,5 +20,12 @@ make-acronym (){
    echo "$acryon"
 }
 
-make-acronym "$@"
+main (){
+    if (( $# != 1 )); then
+        echo "Provide the arguments"
+        exit 1
+    fi
+    make-acronym "$@"
+}
 
+main "$@"
