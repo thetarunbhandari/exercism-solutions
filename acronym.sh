@@ -15,7 +15,7 @@
 make-acronym (){
    local phrase=$1
    local normalized_phrase=${phrase//-/ }
-   normalized_phrase=$(echo "$normalized_phrase" | tr -d '[:punct:]')
+   normalized_phrase=$(echo "$normalized_phrase" | tr -d '[:punct:]') #tr command use to delete the word
    acryon=$(echo "$normalized_phrase" | awk '{for(i=1; i<=NF; i++) printf toupper(substr($i,1,1));}')
    echo "$acryon"
 }
