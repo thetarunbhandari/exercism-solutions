@@ -10,7 +10,7 @@
 #    153 is an Armstrong number, because: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
 #    154 is not an Armstrong number, because: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
 #
-# Link: https://exercism.org/tracks/bash/exercises/armstrong-numbers/edit
+# Link: https://exercism.org/tracks/bash/exercises/armstrong-numbers/
 # --------------------------------------------------------------------------
 
 check_armstrong (){
